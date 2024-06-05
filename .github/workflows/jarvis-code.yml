@@ -29,5 +29,5 @@ jobs:
         # Source of GitHub Action in line 30: 
         # https://github.com/dduzgun-security/secure-code-game-action
         run: |
-          STATUS = $(curl -s https://www.githubstatus.com/api/v2/status.json | jq -r '.status.description')
+          STATUS=$(curl -s https://www.githubstatus.com/api/v2/status.json | jq -r '.status.description')
           echo "Github status: "$STATUS
